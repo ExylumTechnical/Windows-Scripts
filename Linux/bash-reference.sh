@@ -39,4 +39,19 @@ for i in "cat" "dog" "fish"; do
   echo $i
 done;
 
+# do a little custom user prompt to demonstrate a case and while statement
+
+# note here that the variuble USERCMD was not defined before and the code still runs
+# and that the paramater must be enclosed in parenthisis
+while [ "$USERCMD" != "exit" ]; do 
+  echo -n "cmd>"; read USERCMD
+  case $USERCMD in
+    test)
+      echo "custom commands work"
+    ;;
+    help)
+      echo "Very limited shell, only supports the commands test and help at this time"
+    ;;
+  esac;
+  done;
 
