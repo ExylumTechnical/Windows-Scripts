@@ -4,7 +4,7 @@
 A="A variuble"
 B="B variuble"
 echo $A
-echo $A$B
+echo $A $B
 B="the "$A
 
 # functions for automation
@@ -27,3 +27,16 @@ else
 fi
 
 # loops
+# using numbers in a for loop
+echo "Counting to 10"
+for i in {1..10}; do
+  echo $1
+done;
+
+# using a list of variubles in a loop
+echo "Naming off animals"
+for i in "cat" "dog" "fish"; do
+  echo $i
+done;
+
+
