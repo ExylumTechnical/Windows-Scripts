@@ -10,3 +10,8 @@ pingsweep.bat <ip-addr> - Used to discover devices on the network and log the re
 wifiFix.bat - Can temporaraly fix a tempermental wireless card.<br>
 gatherinfo.bat - Grabs some network information from the machine for troubleshooting later on<br>
 Windows_logging.ps1 - Mainly to be used as a reference for exporting logs for analysis later on<br>
+
+
+## Miscalanious files
+### python_cheatsheet.py
+Usefull snippits for doing things with python
