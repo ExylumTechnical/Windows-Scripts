@@ -1,13 +1,17 @@
 #find and replace "path\to-output" with your desired path for file output
  param (
     [string]$Output="C:\Users\$ENV:USERNAME\Downloads\Logs\",
-    [string]$ZipDestination="C:\Users\$ENV:USERNAME\Downloads\logs.zip"
+    [string]$ZipDestination="C:\Users\$ENV:USERNAME\Downloads\"
  )
+ $timestamp=Get-Date -format "yyyy-MM-dd_Hms"
+ $ZipDestination=$ZipDestination+"logs-$timestamp.zip"
+
  try{
  mkdir $Output
- }
- catch{
- write-output "Directory already exists"
+ } catch{
+ write-output "Directory already exists or has other issues writing to C:\Logs"
+ $Output="C:\Logs\"
+ $ZipDestination="C:logs-$timestamp.zip"
  }
 
  $taskfile=$Output+"tasks.csv"
