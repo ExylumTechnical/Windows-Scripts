@@ -1,4 +1,4 @@
-#find and replace "path\to-output" with your desired path for file output
+#use the -output flag to set a custom output csv file
  param (
     [string]$output="C:\Users\$ENV:USERNAME\Downloads\pslist.csv"
  )
