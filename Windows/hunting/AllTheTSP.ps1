@@ -1,4 +1,4 @@
-#find and replace "path\to-output" with your desired path for file output
+# use -Output for the output directory and -ZipDestination for a custom .zip compressed file destination such as a flashdrive
  param (
     [string]$Output="C:\Users\$ENV:USERNAME\Downloads\Logs\",
     [string]$ZipDestination="C:\Users\$ENV:USERNAME\Downloads\"
