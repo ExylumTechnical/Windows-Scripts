@@ -54,6 +54,6 @@ for ($i = $startRange; $i -le $endRange; $i++) {
 }
 
 # Export the results to a CSV file
-$results | Export-Csv -Path "PingSweepResults.csv" -NoTypeInformation
+$results | Export-Csv -Path "C:\windows\temp\Network-Audit.csv" -NoTypeInformation
 
-Write-Host "Ping sweep completed. Results saved to PingSweepResults.csv"
+Write-Host "Ping sweep completed. Results saved to C:\windows\temp\Network-Audit.csv"
