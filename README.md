@@ -5,7 +5,7 @@ This is a repo of usefull scripts I have used in the past and refactored to be a
 This is a collection of scripts to either network the alive hosts using only built in tools, creating restore points on systems, scheduling tasks, fixing a junky wireless connection, and generating an Active Directory domain.
 
 ## Investigate
-This is a collection of scripts to gather information from a system either when looking into errors or after a compromise.
+This is a collection of scripts to gather information from a system either when looking into errors or after a compromise. The scripts for getting processes, services, tasks, and connections are all heavily borrowed from https://github.com/secure-cake/rapid-endpoint-investigations which has more resources, shout out to Secure Cake.
 
 ## Security
 This is a collection of scripts pretaining to enabling the windows firewall as well as setting different levels of permissions, a Firewall rules template, uninstallation of software throught the command line, enabling logging, enabling timeout policies and a script to exit all browsers in case a bad link is navigated to.
