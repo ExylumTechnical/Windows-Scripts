@@ -34,6 +34,10 @@ if($a -ne $b,$c){
 }else{
   echo "a and is equal to b or c"
 }
-
+# Paramaters for a powershell script
+ param (
+    # sets a default value to the variuble paramiter
+    [string]$paramiter="default value"
+ )
 
 
