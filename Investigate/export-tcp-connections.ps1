@@ -1,6 +1,6 @@
 #use the -output flag to set a custom output csv file
  param (
-    [string]$output="C:\tasks.csv",
+    [string]$output="C:\connections.csv",
     [string]$duration=1
  )
 $timespan = New-TimeSpan -Minutes $duration
