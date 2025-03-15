@@ -37,7 +37,16 @@ if($a -ne $b,$c){
 # Paramaters for a powershell script
  param (
     # sets a default value to the variuble paramiter
-    [string]$paramiter="default value"
+    # the paramater name that is called when using the script is the name of the paramater
+    [string]$Paramiter="default value"
  )
+# For loop to iterate through numbers
+for ($i = 1; $i -le 5; $i++) {
+  Write-Host "The value of i is: $i"
+}
 
-
+# For loop to iterate though files in a specific directory
+$files = Get-ChildItem -Path $folderPath
+for ($i = 0; $i -lt $files.Count; $i++) {
+    Write-Host $files[$i].Name
+}
